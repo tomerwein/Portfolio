@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Roboto&family=Rubik&family=Solitreo&display=swap');
+
+.project-description {
+    font-size: 28px;              /* Set font size */
+    line-height: 1.2;            /* Spacing between lines */
+    color: #e1e1e1;                /* Dark gray text color */
+    margin: 10px 0;              /* Add some margin to the top and bottom */
+    
+    border-radius: 5px;          /* Slightly rounded corners */
+    font-family: 'Neucha', sans-serif; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);  /* A very light box shadow */
+    max-width: 500px;            /* Limit the width if needed */
+    text-align: left;          /* Center text */ 
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;      /* Reset any margin */
+    padding: 0;     /* Reset any padding */
+    text-decoration: none; /* Optional: Remove the default underline from links */
+    color: inherit; /* Optional: Ensure link uses the same color as surrounding text */
+}
+
+
+.github-icon {
+    width: 45px;  /* Adjust the size as required */
+    height: 28px;
+    margin-left: -10px;
+    margin-bottom: -4px;
+    margin-right: -4px;
+}
+
+
+
+.project-card {
+    
+    display: flex;
+    justify-content: space-between; /* Separate title/description from images */
+    width: 1000px; /* Adjust width as needed */
+    border: 1px solid #e1e1e1;
+    padding: 20px; /* Added padding all around for spacing */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between each project card */
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;  /* Adjust as needed */
+    margin-top: 10px;
+}
+
+.tech-item {
+    margin-top: 50px ;
+    margin-bottom: -38px;
+    cursor: pointer;
+    padding: 5px 10px ;          /* Adjust as needed */
+    max-width: 200px;
+    background-color: #b3523a;  /* Adjust the color as needed */
+    border-radius: 4px;
+    color: white;               /* Adjust the text color as needed */
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.tech-item:hover {
+    background-color: #c03a19;  /* Adjust the color as needed */
+    
+}
+
+
+
+
+.project-content a {
+    display: inline-block;
+    margin-top: 140px;
+    padding: 5px 10px;
+    border: 1px solid #226e26;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+}
+
+.project-content a:hover {
+    background-color: #226e26;
+    border: 1px solid #4CAF50;
+}
+
+.project-title {
+    display: flex;
+    padding-left: 50px;
+    
+}
+
+.project-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.image-gallery-image {
+    max-width: 450px;
+    height: auto !important; 
+    margin: 0 auto;
+    border: 4px solid rgb(85, 85, 85);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery-thumbnails .image-gallery-thumbnail {
+    width: 100px !important;
+    height: 100px !important;
+}

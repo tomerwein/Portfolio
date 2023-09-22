@@ -1,0 +1,9 @@
+.projects-container {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+}

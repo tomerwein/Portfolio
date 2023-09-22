@@ -1,0 +1,16 @@
+.introduction-container {
+    /* background: url('path-to-your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover; */
+    margin-top: 150px;
+    padding: 2rem;
+    color: #ffffff;
+}
+
+.introduction-container .name {
+    font-size: 1.5rem;
+}
+
+.introduction-container .title {
+    font-size: 2rem;
+    color: #ff6347;
+}
