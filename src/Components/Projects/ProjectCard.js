@@ -3,8 +3,7 @@ import ImageGallery from "react-image-gallery";
 import './ProjectCard.css';
 import "react-image-gallery/styles/css/image-gallery.css";
 import githubIcon from '../../Media/General/github.png';
-
-
+import techToLogoMapping from '../Data/TechLogos';
 
 const ProjectCard = ({ project }) => {
     const images = project.images.map(image => ({
@@ -20,7 +19,13 @@ const ProjectCard = ({ project }) => {
 
                 <div className="tech-stack">
                     {project.techStack.map((tech, index) => (
-                        <span key={index} className="tech-item">{tech}</span>
+                        <div key={index} classname='tech-item-container'>
+                            
+                            <span className="tech-item">
+                                {techToLogoMapping[tech] && <img src={techToLogoMapping[tech]} alt={tech} className="tech-logo" />}
+                                {tech}
+                            </span>
+                        </div>
                     ))}
                 </div>
 
@@ -30,6 +35,7 @@ const ProjectCard = ({ project }) => {
                 </a>
 
             </div>
+            
             <div className="project-images">
                 {images && (
                     <ImageGallery

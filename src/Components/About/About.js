@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './About.css';
+import MetaImage from '../../Media/General/Meta.png';
 
 const About = () => {
     const [hoveredButton, setHoveredButton] = useState(null);
@@ -18,33 +19,37 @@ const About = () => {
 
                 <div className="experience-buttons-row">
                     <button 
+                        className={hoveredButton === 'meta' ? "meta-hover-button" : "meta-button"} 
                         onMouseEnter={() => setHoveredButton('meta')}
                         onMouseLeave={() => setHoveredButton(null)}
                     >
-                        {hoveredButton === 'meta' ? 'More information about Meta internship' : 'Backend internship at Meta'}
+                        {hoveredButton === 'meta' ? 'Backend Software Engineer Internship' : null}
                     </button>
                     
                     <button 
+                        className={hoveredButton === 'python' ? "python-hover-button" : "python-button"} 
                         onMouseEnter={() => setHoveredButton('python')}
                         onMouseLeave={() => setHoveredButton(null)}
                     >
-                        {hoveredButton === 'python' ? 'I was a Python instructor for a project aimed at guiding high school students from the periphery into technological units in the IDF' : 'Python instructor'}
+                        {hoveredButton === 'python' ? 'Python Instructor At Nitzanim' : null}
                     </button>
                 </div>
 
                 <div className="experience-buttons-row">
                     <button 
+                        className={hoveredButton === 'idf' ? "idf-hover-button" : "idf-button"} 
                         onMouseEnter={() => setHoveredButton('idf')}
                         onMouseLeave={() => setHoveredButton(null)}
                     >
-                        {hoveredButton === 'idf' ? 'More information about IDF intelligence analyst' : 'Intelligence analyst in the IDF'}
+                        {hoveredButton === 'idf' ? 'Intelligence analyst in the IDF' : null}
                     </button>
                     
                     <button 
+                        className={hoveredButton === 'projects' ? "projects-hover-button" : "projects-button"}
                         onMouseEnter={() => setHoveredButton('projects')}
                         onMouseLeave={() => setHoveredButton(null)}
                     >
-                        {hoveredButton === 'projects' ? 'Projects that will be showcased here' : 'Projects'}
+                        {hoveredButton === 'projects' ? 'Click here to watch my projects' : null}
                     </button>
                 </div>
 

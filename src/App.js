@@ -7,22 +7,22 @@ import Projects from './Components/Projects/Projects';
 function App() {
     return (
         <div className="App">
-            <Header />
-            <header className="App-header">
-                <div id="homepage">
-                    <Introduction />
-                </div>
+            <Header className="layout">
+                <header className="App-header">
+                    <div id="homepage">
+                        <Introduction />
+                    </div>
 
-                <div id="about">
-                    <About />
-                </div>
+                    <div id="about">
+                        <About />
+                    </div>
 
-                <div id="projects">
-                    <Projects />
-                </div>
-                
-
-            </header>
+                    <div id="projects">
+                        <Projects />
+                    </div>
+                    
+                </header>
+            </Header>
         </div>
     );
 }

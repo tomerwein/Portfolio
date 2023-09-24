@@ -1,31 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Roboto&family=Rubik&family=Solitreo&display=swap');
 
 .project-description {
-    font-size: 28px;              /* Set font size */
-    line-height: 1.2;            /* Spacing between lines */
-    color: #e1e1e1;                /* Dark gray text color */
-    margin: 10px 0;              /* Add some margin to the top and bottom */
+    font-size: 28px;              
+    line-height: 1.2;            
+    color: #e1e1e1;                
+    margin: 10px 0;              
     
-    border-radius: 5px;          /* Slightly rounded corners */
+    border-radius: 5px;          
     font-family: 'Neucha', sans-serif; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);  /* A very light box shadow */
-    max-width: 500px;            /* Limit the width if needed */
-    text-align: left;          /* Center text */ 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);  
+    max-width: 500px;           
+    text-align: left;         
 }
 
 .github-link {
     display: flex;
     align-items: center;
     gap: 5px;
-    margin: 0;      /* Reset any margin */
-    padding: 0;     /* Reset any padding */
-    text-decoration: none; /* Optional: Remove the default underline from links */
-    color: inherit; /* Optional: Ensure link uses the same color as surrounding text */
+    margin: 0;     
+    padding: 0;     
+    text-decoration: none; 
+    color: inherit; 
 }
 
 
 .github-icon {
-    width: 45px;  /* Adjust the size as required */
+    width: 45px;  
     height: 28px;
     margin-left: -10px;
     margin-bottom: -4px;
@@ -37,43 +37,51 @@
 .project-card {
     
     display: flex;
-    justify-content: space-between; /* Separate title/description from images */
-    width: 1000px; /* Adjust width as needed */
+    justify-content: space-between; 
+    width: 1000px; 
     border: 1px solid #e1e1e1;
-    padding: 20px; /* Added padding all around for spacing */
+    padding: 20px; 
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Space between each project card */
+    margin-bottom: 20px; 
 }
 
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;  /* Adjust as needed */
+    gap: 8px;  
     margin-top: 10px;
 }
 
 .tech-item {
-    margin-top: 50px ;
-    margin-bottom: -38px;
+    display: flex;        
+    align-items: center;   
+    gap: 5px;            
     cursor: pointer;
-    padding: 5px 10px ;          /* Adjust as needed */
-    max-width: 200px;
-    background-color: #b3523a;  /* Adjust the color as needed */
+    padding: 5px 10px;     
+    background-color: #b3523a;
     border-radius: 4px;
-    color: white;               /* Adjust the text color as needed */
+    color: white;
     font-size: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    
 }
+
+.tech-logo {
+    width: 20px;          
+    height: 20px;       
+    margin-left: -5px;
+}
+
+
 
 .tech-item:hover {
     background-color: #c03a19;  /* Adjust the color as needed */
     
 }
 
-
-
+.project-content {
+    max-width: 600px;
+}
 
 .project-content a {
     display: inline-block;
@@ -103,15 +111,32 @@
     margin-top: 30px;
 }
 
+/* Static frame */
+
+
+/* Image adjustments inside the static frame */
 .image-gallery-image {
-    max-width: 450px;
-    height: auto !important; 
-    margin: 0 auto;
-    border: 4px solid rgb(85, 85, 85);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 450px;  /* 450px (image max-width) + 8px (border) */
+    height: 450px; /* 450px (image max-height) + 8px (border) */
+    
+    object-fit: contain; /* Ensures the image scales properly within given dimensions */
+    margin: 0px;  /* Reset margin to 0 */
+    border: none;  /* Remove border from the image since the frame has it */
 }
 
+
 .image-gallery-thumbnails .image-gallery-thumbnail {
-    width: 100px !important;
-    height: 100px !important;
+    width: 100px ;
+    height: 100px;
+}
+
+.tech-item-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 5px;            /* Gap between tech name and logo */
+}
+
+.tech-logo {
+    width: 20px;         /* Adjust as needed */
+    height: 20px;        /* Adjust as needed */
 }

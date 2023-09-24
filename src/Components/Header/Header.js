@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-const Header = () => {
+const Header = ({children}) => {
     return (
         <div>
             <nav className="header">
@@ -11,6 +11,8 @@ const Header = () => {
                 <a href="#recommandations">Recommandations</a>
                 <a href="#contact">Contact Me</a>
             </nav>
+
+            {children}
         </div>
     );
 };

@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.header {
+  position: sticky;
+  top: 0;             /* Stick to the top */
+  z-index: 100;       /* To ensure it's always on top of other elements */
+  background-color: white; /* Or any color you prefer to ensure readability */
+
+}
+
 
 .App-header {
   background-color: #282c34;
