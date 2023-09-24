@@ -15,6 +15,15 @@ import blogImage1 from '../../Media/Blog/blog1.png';
 import blogImage2 from '../../Media/Blog/blog2.png';
 import blogImage3 from '../../Media/Blog/blog3.png';
 
+// TaskManager Images
+import taskImage1 from '../../Media/TaskManager/task1.png';
+import taskImage2 from '../../Media/TaskManager/task2.png';
+import taskImage3 from '../../Media/TaskManager/task3.png';
+
+// Avatar Images
+import avatar1 from '../../Media/Avatar/avatar1.png';
+
+
 const projectData = [
     {
         id: 1,
@@ -40,8 +49,23 @@ const projectData = [
         techStack: ['Typescript', 'ReactJS', 'NextJS', 'MongoDB', 'Restful-api', 'Cloudinary', 'JWT', 'CSRF-Protection', 'Bcrypt', 'Prisma', 'Authentication' ],
         images: [blogImage1, blogImage2, blogImage3]
     },
+    {
+        id: 4,
+        title: 'Task Manager',
+        description: 'I developed a secure task manager application that allows users to register, login, manage, edit, delete, and mark tasks as complete in their personal task lists, while also prioritizing and categorizing them. The platform includes essential security features to ensure user data protection.',
+        gitLink: "https://github.com/tomerwein/Task-Manager-Tomer",
+        techStack: ['Typescript', 'ReactJS', 'NodeJS', 'Express', 'Drag-And-Drop', 'Argon2', 'JSON', 'Cors', 'Bcrypt' ],
+        images: [taskImage1, taskImage2, taskImage3]
+    },
+    {
+        id: 5,
+        title: 'Avatar',
+        description: 'I developed an application that allows users to create avatars using the first letter of their name and choose their preferred color. The entire process is conducted server-side (SSR).',
+        gitLink: "https://github.com/tomerwein/AvatarApp",
+        techStack: ['Typescript', 'ReactJS', 'NodeJS', 'Express', 'SSR', 'Canvas'],
+        images: [avatar1]
+    },
 
-    // Add more projects as needed
 ];
 
 export default projectData;
