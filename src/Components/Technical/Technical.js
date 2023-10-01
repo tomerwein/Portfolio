@@ -3,7 +3,7 @@ import './Technical.css'
 
 const Technical = () => {
     const languages = ['Python', 'Java', 'Typescript', 'ReactJS', 'Hack / PHP', 'SQL'];
-    const tech = ['MongoDB', 'AWS', 'NodeJS', 'NextJS', 'Cloudinary', 'GraphQL', 'GitHub', 'Mercurial']
+    const tech = ['MongoDB', 'AWS', 'NodeJS', 'NextJS', 'Cloudinary', 'GraphQL', 'GitHub']
 
     return (
         <div className="categories-container">

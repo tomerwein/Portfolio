@@ -21,10 +21,14 @@ function App() {
                     <section id="projects">
                         <Projects />
                     </section>
-
+                    
                     <section id="contact">
                         <ContactMe />
                     </section>
+
+                    
+
+
                     
                 </header>
             </Layout>

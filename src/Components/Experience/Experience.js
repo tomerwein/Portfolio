@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import "./Experience.css";
 
 const Experience = () => {
     const [hoveredButton, setHoveredButton] = useState(null);
 
     return (
         
-        <div className="experience">
+        <div className="experience-container">
             <h2>Experience</h2>
 
             <div className="experience-buttons">

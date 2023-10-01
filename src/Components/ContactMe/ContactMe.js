@@ -25,7 +25,7 @@ const ContactMe = () => {
         <form onSubmit={handleSubmit} className="contact-form">
             <h1>Contact Me</h1>
 
-            <label htmlFor="name" className="name-email">Name:</label>
+            <label className="name-email">Name:</label>
             <input 
                 type="text" 
                 id="name" 
@@ -36,7 +36,7 @@ const ContactMe = () => {
                 className="formInput"
             />
             
-            <label htmlFor="email" className="name-email">Email:</label>
+            <label className="name-email">Email:</label>
             <input 
                 type="email" 
                 id="email" 
@@ -47,7 +47,7 @@ const ContactMe = () => {
                 className="formInput"
             />
             
-            <label htmlFor="message" className="name-email">Message:</label>
+            <label className="name-email">Message:</label>
             <textarea 
                 id="message" 
                 name="message" 

@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Roboto&family=Rubik&family=Solitreo&display=swap');
 
-.experience-container {
-    
-    margin-top: 150px;
-}
-
 
 .experience-buttons {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
 }
 
 .meta-button {
@@ -77,7 +72,6 @@
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-    
 }
 
 .experience-buttons-row button {
@@ -101,4 +95,49 @@
     font-size: 24px;
     box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
     line-height: 32px;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: space-around; /* Adjusts the space between the Languages and Tech */
+    flex-wrap: wrap; /* Allows the content to wrap into the next line if the screen size is too small */
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+
+
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-family: 'Neucha', sans-serif;
+    text-align: left;
+    font-size: 28px;
+}
+
+.about-logo {
+    float: left; /* Makes the logo float to the left of the text */
+    margin-right: 10px; /* Adds some space between the logo and the text */
+    margin-bottom: 10px; /* Optional: Adds some space below the logo if needed */
+    width: 30px;          
+    height: 30px;      
+}
+
+
+.about-text {
+    font-family: 'Neucha', sans-serif;
+    text-align: left;
+    font-size: 28px;
+}
+
+.info-line {
+    margin-left: 50px;
 }
