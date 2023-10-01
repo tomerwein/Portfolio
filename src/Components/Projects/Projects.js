@@ -1,9 +1,9 @@
 import React from 'react';
 import './Projects.css';
-import './ProjectCard.css';
+import '../ProjectCard/ProjectCard.css';
 
 import projectData from '../Data/ProjectData';
-import ProjectCard from './ProjectCard';
+import ProjectCard from '../ProjectCard/ProjectCard';
 
 const Projects = () => {
     return (

@@ -111,23 +111,24 @@
     margin-top: 30px;
 }
 
-/* Static frame */
 
 
-/* Image adjustments inside the static frame */
 .image-gallery-image {
-    width: 450px;  /* 450px (image max-width) + 8px (border) */
-    height: 450px; /* 450px (image max-height) + 8px (border) */
-    
-    object-fit: contain; /* Ensures the image scales properly within given dimensions */
-    margin: 0px;  /* Reset margin to 0 */
-    border: none;  /* Remove border from the image since the frame has it */
+    width: auto;  
+    height: auto; 
+    max-width: 400px;  /* Ensure the image doesn't overflow its container */
+    max-height: 400px; /* Adjust this as per your requirement */
+    object-fit: contain;
+    margin: 0px;
+    border: none;
+    background-color: transparent; /* Ensure no background color */
 }
 
 
 .image-gallery-thumbnails .image-gallery-thumbnail {
     width: 100px ;
     height: 100px;
+    object-fit: contain;
 }
 
 
@@ -137,7 +138,3 @@
     gap: 5px;            /* Gap between tech name and logo */
 }
 
-.tech-logo {
-    width: 20px;         /* Adjust as needed */
-    height: 20px;        /* Adjust as needed */
-}

@@ -11,8 +11,6 @@
     justify-content: center;
     margin-bottom: 50px;
     font-family: 'Neucha', sans-serif;
-    text-align: left;
-    font-size: 28px;
 }
 
 .experience-buttons {
@@ -110,21 +108,3 @@
     box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
     line-height: 32px;
 }
-
-.categories-container {
-    display: flex;
-    justify-content: space-around; /* Adjusts the space between the Languages and Tech */
-    flex-wrap: wrap; /* Allows the content to wrap into the next line if the screen size is too small */
-}
-
-.category {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
-
-.tech-item {
-    padding: 5px 100px;     
-
-}
-

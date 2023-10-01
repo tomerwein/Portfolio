@@ -1,28 +1,33 @@
 import './App.css';
-import Header from './Components/Header/Header';
 import About from './Components/About/About';
 import Introduction from './Components/Intro/Intro';
 import Projects from './Components/Projects/Projects';
+import ContactMe from './Components/ContactMe/ContactMe';
+import Layout from './Components/Header/Header';
 
 function App() {
     return (
         <div className="App">
-            <Header className="layout">
+            <Layout className="layout">
                 <header className="App-header">
-                    <div id="homepage">
+                    <section id="homepage">
                         <Introduction />
-                    </div>
+                    </section>
 
-                    <div id="about">
+                    <section id="about">
                         <About />
-                    </div>
+                    </section>
 
-                    <div id="projects">
+                    <section id="projects">
                         <Projects />
-                    </div>
+                    </section>
+
+                    <section id="contact">
+                        <ContactMe />
+                    </section>
                     
                 </header>
-            </Header>
+            </Layout>
         </div>
     );
 }

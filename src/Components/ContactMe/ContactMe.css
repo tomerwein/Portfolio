@@ -1,0 +1,44 @@
+.contact-form {
+    border-top: 5px solid #00aaff;
+    border-right: 8px solid #00aaff;
+    border-bottom: 5px solid #00aaff;
+    border-left: 8px solid #00aaff;
+    border-radius: 15px;
+    
+    
+    padding-left: 80px;
+    padding-right: 100px;
+    margin-bottom: 100px;
+}
+
+
+.name-email {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.formInput,
+.formTextarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 18px;
+    border: 1px solid #ccc; /* Added to give a border to the inputs */
+    border-radius: 5px; /* Optional: for rounded corners in the inputs */
+}
+
+.formSend {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+.formSend:hover {
+    background-color: darkblue;
+}

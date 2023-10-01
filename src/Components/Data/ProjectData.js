@@ -16,9 +16,10 @@ import blogImage2 from '../../Media/Blog/blog2.png';
 import blogImage3 from '../../Media/Blog/blog3.png';
 
 // TaskManager Images
-import taskImage1 from '../../Media/TaskManager/task1.png';
-import taskImage2 from '../../Media/TaskManager/task2.png';
-import taskImage3 from '../../Media/TaskManager/task3.png';
+import taskImage1 from '../../Media/TaskManager/taskManager1.png';
+import taskImage2 from '../../Media/TaskManager/taskManager2.png';
+import taskImage3 from '../../Media/TaskManager/taskManager3.png';
+import taskImage4 from '../../Media/TaskManager/taskManager4.png';
 
 // Avatar Images
 import avatar1 from '../../Media/Avatar/avatar1.png';
@@ -54,8 +55,8 @@ const projectData = [
         title: 'Task Manager',
         description: 'I developed a secure task manager application that allows users to register, login, manage, edit, delete, and mark tasks as complete in their personal task lists, while also prioritizing and categorizing them. The platform includes essential security features to ensure user data protection.',
         gitLink: "https://github.com/tomerwein/Task-Manager-Tomer",
-        techStack: ['Typescript', 'ReactJS', 'NodeJS', 'Express', 'Drag-And-Drop', 'Argon2', 'JSON', 'Cors', 'Bcrypt' ],
-        images: [taskImage1, taskImage2, taskImage3]
+        techStack: ['Typescript', 'ReactJS', 'NodeJS', 'AWS', 'Express', 'Drag-And-Drop', 'Argon2', 'JSON', 'Cors', 'Bcrypt' ],
+        images: [taskImage3, taskImage4, taskImage1, taskImage2 ]
     },
     {
         id: 5,

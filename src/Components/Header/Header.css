@@ -1,16 +1,59 @@
-.header {   
+.header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center; 
     padding: 1rem;
     background-color: #333;
     color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-.header a {
+.email-phone-logo {
+    width: 20px;         
+    height: 20px;     
+    padding-right: 4px; 
+}
+
+.contact-info {
+    font-size: 18px;
+}
+
+.nav-links a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 0.5rem 1.5rem;  /* Increased right and left padding */
+    margin-right: 15px; /* Increased gap between links */
+    border: 2px solid white; /* Made border thicker */
+    border-radius: 3px; /* Reduced border-radius for softer corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Added a light background color */
+    transition: all 0.1s ease-in-out;
 }
 
-.header a:hover {
-    text-decoration: underline;
+.nav-links a:last-child {
+    margin-right: 0; /* Removes the right margin from the last link */
+}
+
+.nav-links a:hover {
+    background-color: #8400ff; 
+    color: #fff;
+    border-color: #fff; /* Changed border color on hover */
+}
+
+.nav-links a:active {
+    background-color: #8400ff; 
+    border-color: #fff; /* Keep border color consistent on active state */
+    color: #fff;
+}
+
+.nav-links a.active {
+    background-color: #8400ff;
+    color: #fff;
+    border-color: #fff;
+}
+
+
+.phone, .email {
+    padding-left: 30px;
+    font-size: 18px;
 }

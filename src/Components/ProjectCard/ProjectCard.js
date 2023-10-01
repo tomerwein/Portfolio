@@ -40,6 +40,11 @@ const ProjectCard = ({ project }) => {
                 {images && (
                     <ImageGallery
                         items={images}
+                        autoPlay={true}
+                        showBullets={true}
+                        showFullscreenButton={false}
+                        slideDuration={750}
+                        slideInterval={5000}
                     />
                 )}
             </div>

@@ -1,0 +1,46 @@
+.categories-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    border: 3px solid #00aaff;
+    border-radius: 15px; 
+    padding: 20px; 
+    margin: 20px 0; 
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: left; 
+}
+
+.technical-tech-item {
+    min-width: 180px;
+    height: auto;  
+    box-sizing: border-box;  
+    padding: 10px 15px; /* Increased padding to give more space inside the box */
+    margin-bottom: 10px; 
+    display: inline-block; 
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+
+    border: 2px solid #00aaff; /* Changed border color to a nice blue */
+    border-radius: 10px; /* Added border-radius to round the corners */
+    transition: border-color 0.15s ease-in-out; /* Added transition for a smooth color change on hover */
+}
+
+.technical-tech-item:hover {
+    border-color: #ffaa00; /* Change border color on hover to a nice orange */
+}
+
+.technical-tech-logo {
+    width: 20px;          
+    height: 20px;       
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px; 
+}
